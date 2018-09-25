@@ -47,6 +47,7 @@ print(parsedDict.values())
 #    Requirement: requests module or urllib module
 #    Action: create objects to serve as containers for the download
 #    Action: download from the repo and assign into the objects
+#       possible approach? https://stackoverflow.com/questions/11026959/writing-a-dict-to-txt-file-and-reading-it-back
 #    Action: create objects into which lines of downloads can be assigned
 
 # 2) run the following operations on the data
