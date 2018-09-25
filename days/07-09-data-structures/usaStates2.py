@@ -39,7 +39,8 @@ def get_every_nth_state(states=states, n=10):
     indexes = list(range(0, len(states) + 1, n))
     for index in indexes[1:]:
         theList.append(states[index - 1])
-    print(theList)
+    return theList
+
 
 def get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
     """Look up a state abbreviation by querying the us_state_abbrev
@@ -52,11 +53,13 @@ def get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
     else: 
         return NOT_FOUND
 
+
 def get_longest_state(data):
     """Receives data, which can be the us_state_abbrev dict or the states
        list (see above). It returns the longest state measured by the length
        of the string"""
     return sorted(data, key=len)[-1]
+
 
 def combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
                                           states=states):
@@ -70,8 +73,4 @@ def combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
         abbrevList.append(abbrev)
     abbrevList = sorted(abbrevList[0:10])
     finalList = abbrevList + sortList
-    print(finalList)
     return finalList
-
-
-combine_state_names_and_abbreviations()
