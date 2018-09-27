@@ -61,3 +61,16 @@ def combine_state_names_and_abbreviations():
        the states list (takeaways: use another dict method to get all
        values and use sorted, list slicing and list concatenation)"""
     return sorted(us_state_abbrev.values())[:10] + sorted(states)[-10:]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
